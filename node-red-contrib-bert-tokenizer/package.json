@@ -1,0 +1,72 @@
+{
+  "_from": "node-red-contrib-bert-tokenizer@1.0.3",
+  "_id": "node-red-contrib-bert-tokenizer@1.0.3",
+  "_inBundle": false,
+  "_integrity": "sha512-p3oamFYnUX3PLfsRPMNL9AgtGHkIi4IwwhjsUcx+sDhEScrhFeTdzDCbPUOJx23gtM/8NOctCpv38riJbgGjLg==",
+  "_location": "/node-red-contrib-bert-tokenizer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "node-red-contrib-bert-tokenizer@1.0.3",
+    "name": "node-red-contrib-bert-tokenizer",
+    "escapedName": "node-red-contrib-bert-tokenizer",
+    "rawSpec": "1.0.3",
+    "saveSpec": null,
+    "fetchSpec": "1.0.3"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/node-red-contrib-bert-tokenizer/-/node-red-contrib-bert-tokenizer-1.0.3.tgz",
+  "_shasum": "5d48fbff37081489c4e4123f9a720f518594b1f4",
+  "_spec": "node-red-contrib-bert-tokenizer@1.0.3",
+  "_where": "C:\\Users\\F.R.I.D.A.Y\\.node-red",
+  "author": {
+    "name": "Ted Chang"
+  },
+  "bugs": {
+    "url": "https://github.com/tedhtchang/node-red-contrib-bert-tokenizer/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@types/node-fetch": "^2.5.5",
+    "bert-tokenizer": "^1.1.7",
+    "node-fetch": "^2.6.0"
+  },
+  "deprecated": false,
+  "description": "A simple NodeRED module to implement bert-tokenizer",
+  "devDependencies": {
+    "@types/node": "^13.7.7",
+    "ncp": "^2.0.0",
+    "typescript": "^3.8.3"
+  },
+  "homepage": "https://github.com/tedhtchang/node-red-contrib-bert-tokenizer#readme",
+  "keywords": [
+    "node-red",
+    "nodejs",
+    "tfjs",
+    "tensorflow",
+    "deeplearning",
+    "BERT",
+    "tokenizer"
+  ],
+  "license": "Apache-2.0",
+  "main": "dist/index.js",
+  "name": "node-red-contrib-bert-tokenizer",
+  "node-red": {
+    "nodes": {
+      "bert-tokenizer": "dist/index.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tedhtchang/node-red-contrib-bert-tokenizer.git"
+  },
+  "scripts": {
+    "build": "tsc && npm run copy",
+    "copy": "ncp src/index.html dist/index.html"
+  },
+  "version": "1.0.3"
+}

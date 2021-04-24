@@ -1,0 +1,129 @@
+[
+    {
+        "id": "22b8998c.123256",
+        "type": "tab",
+        "label": "Object detection example flow",
+        "disabled": false,
+        "info": "This flow uses the https://developer.ibm.com/exchanges/models/all/max-object-detector/ deep learning model from the Model Asset Exchange to localize and identify multiple objects in a single image. Refer to the documentation for information about the returned message.\n\nInstall the following three modules to run this example flow:\n - [node-red-contrib-model-asset-exchange](https://www.npmjs.com/package/node-red-contrib-model-asset-exchange)\n - [node-red-contrib-browser-utils](https://www.npmjs.com/package/node-red-contrib-browser-utils)\n - [node-red-contrib-image-output](https://npmjs.org/package/node-red-contrib-image-output)\n \n> Note: The object-detector node has been pre-configured to use a hosted model evaluation instance. We recommend using your own local or cloud instance for purposes other than evaluation.\n\nTo adjust the size of the image output in this flow, double-click the **Image output** node. Image width is set to 300px by default."
+    },
+    {
+        "id": "33009a4c.b7edc6",
+        "type": "debug",
+        "z": "22b8998c.123256",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 630,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "7519a8e5.338358",
+        "type": "object-detector",
+        "z": "22b8998c.123256",
+        "service": "344d7f84.2e972",
+        "method": "predict",
+        "passthrough": false,
+        "annotated_input": true,
+        "predict_body": "",
+        "predict_bodyType": "str",
+        "predict_threshold": "0.7",
+        "predict_thresholdType": "str",
+        "name": "",
+        "x": 340,
+        "y": 140,
+        "wires": [
+            [
+                "33009a4c.b7edc6",
+                "9e0411ea.dda4a"
+            ]
+        ]
+    },
+    {
+        "id": "1fa872b4.431d9d",
+        "type": "fileinject",
+        "z": "22b8998c.123256",
+        "name": "",
+        "x": 120,
+        "y": 140,
+        "wires": [
+            [
+                "7519a8e5.338358"
+            ]
+        ]
+    },
+    {
+        "id": "1aea8ee1.9bd941",
+        "type": "camera",
+        "z": "22b8998c.123256",
+        "name": "",
+        "x": 110,
+        "y": 198,
+        "wires": [
+            [
+                "7519a8e5.338358"
+            ]
+        ]
+    },
+    {
+        "id": "61bd50ca.9d9f2",
+        "type": "comment",
+        "z": "22b8998c.123256",
+        "name": "Localize and identify multiple objects in a single image, then display the output",
+        "info": "",
+        "x": 320,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "a84a0e4.9c024f",
+        "type": "image",
+        "z": "22b8998c.123256",
+        "name": "",
+        "width": "600",
+        "data": "payload",
+        "dataType": "msg",
+        "thumbnail": false,
+        "pass": false,
+        "outputs": 0,
+        "x": 650.5,
+        "y": 198,
+        "wires": []
+    },
+    {
+        "id": "9e0411ea.dda4a",
+        "type": "function",
+        "z": "22b8998c.123256",
+        "name": "Extract Bounding Box Image Data",
+        "func": "// if the incoming message contains the annotated image\n// send it to the image output node to display\n\nmsg.payload = msg.annotatedInput;\nif (msg.payload) {\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 399.5,
+        "y": 198,
+        "wires": [
+            [
+                "a84a0e4.9c024f"
+            ]
+        ]
+    },
+    {
+        "id": "6a8c35fc.af10ec",
+        "type": "comment",
+        "z": "22b8998c.123256",
+        "name": "To adjust the size of the preview image, double-click the \"Image output\" node",
+        "info": "By default, the image width is set to 300px.",
+        "x": 310,
+        "y": 77,
+        "wires": []
+    },
+    {
+        "id": "344d7f84.2e972",
+        "type": "object-detector-service",
+        "z": "",
+        "host": "https://max-object-detector.codait-prod-41208c73af8fca213512856c7a09db52-0000.us-east.containers.appdomain.cloud",
+        "name": "cloud"
+    }
+]

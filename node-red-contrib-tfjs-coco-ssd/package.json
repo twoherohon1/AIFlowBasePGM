@@ -1,0 +1,66 @@
+{
+  "_from": "node-red-contrib-tfjs-coco-ssd@0.5.5",
+  "_id": "node-red-contrib-tfjs-coco-ssd@0.5.5",
+  "_inBundle": false,
+  "_integrity": "sha512-RQ/B5OzJ6+CicJemPpqYF32LSazVbapE2lKXt5kuAWFE4bAHr0EyRW3jojKnpOHZceIlitJ5LNKNUEA9OQFedg==",
+  "_location": "/node-red-contrib-tfjs-coco-ssd",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "node-red-contrib-tfjs-coco-ssd@0.5.5",
+    "name": "node-red-contrib-tfjs-coco-ssd",
+    "escapedName": "node-red-contrib-tfjs-coco-ssd",
+    "rawSpec": "0.5.5",
+    "saveSpec": null,
+    "fetchSpec": "0.5.5"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/node-red-contrib-tfjs-coco-ssd/-/node-red-contrib-tfjs-coco-ssd-0.5.5.tgz",
+  "_shasum": "30b11f8297b041499007fb7966045e5fd4d6fcd2",
+  "_spec": "node-red-contrib-tfjs-coco-ssd@0.5.5",
+  "_where": "C:\\Users\\F.R.I.D.A.Y\\.node-red",
+  "author": {
+    "name": "Dave Conway-Jones",
+    "email": "ceejay@vnet.ibm.com",
+    "url": "http://nodered.org"
+  },
+  "bugs": {
+    "url": "https://github.com/dceejay/tfjs-coco-ssd/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@tensorflow-models/coco-ssd": "2.0.3",
+    "@tensorflow/tfjs-node": "1.4.0",
+    "compression": "^1.7.4",
+    "express": "^4.16.4",
+    "pureimage": "^0.2.5"
+  },
+  "deprecated": false,
+  "description": "A Node-RED node that uses tensorflowjs for object detection.",
+  "homepage": "https://github.com/dceejay/tfjs-coco-ssd#readme",
+  "keywords": [
+    "node-red",
+    "tensorflow",
+    "tensorflowjs",
+    "tfjs"
+  ],
+  "license": "Apache-2.0",
+  "name": "node-red-contrib-tfjs-coco-ssd",
+  "node-red": {
+    "nodes": {
+      "tensorflowCoco": "tfjs.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dceejay/tfjs-coco-ssd.git"
+  },
+  "scripts": {
+    "postinstall": "node fixwindll.js"
+  },
+  "version": "0.5.5"
+}

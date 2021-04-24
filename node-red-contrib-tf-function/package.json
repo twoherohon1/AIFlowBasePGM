@@ -1,0 +1,61 @@
+{
+  "_from": "node-red-contrib-tf-function@0.1.0",
+  "_id": "node-red-contrib-tf-function@0.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-NcJ8fM6lSd1f4LLPgtv86nOFajuz/vtAk2NZjA+2Rn7VWdktSEV+QQTd5Pbj5JC1EjTS06Pghz6AC4Gw76/LOQ==",
+  "_location": "/node-red-contrib-tf-function",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "node-red-contrib-tf-function@0.1.0",
+    "name": "node-red-contrib-tf-function",
+    "escapedName": "node-red-contrib-tf-function",
+    "rawSpec": "0.1.0",
+    "saveSpec": null,
+    "fetchSpec": "0.1.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/node-red-contrib-tf-function/-/node-red-contrib-tf-function-0.1.0.tgz",
+  "_shasum": "f429410472ca015cdc1d3e3287b0646156a8607f",
+  "_spec": "node-red-contrib-tf-function@0.1.0",
+  "_where": "C:\\Users\\F.R.I.D.A.Y\\.node-red",
+  "author": {
+    "name": "yh.wang@ibm.com"
+  },
+  "bugs": {
+    "url": "https://github.com/yhwang/node-red-contrib-tf-function/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A Node-RED custom node which mimic the original function node but provide tf in the global context",
+  "homepage": "https://github.com/yhwang/node-red-contrib-tf-function#readme",
+  "keywords": [
+    "node-red",
+    "tfjs",
+    "tf",
+    "function"
+  ],
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "name": "node-red-contrib-tf-function",
+  "node-red": {
+    "nodes": {
+      "tf-function": "index.js"
+    }
+  },
+  "peerDependencies": {
+    "@tensorflow/tfjs-node": "^1.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yhwang/node-red-contrib-tf-function.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.1.0"
+}

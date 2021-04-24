@@ -1,0 +1,73 @@
+{
+  "_from": "node-red-contrib-post-object-detection@0.1.6",
+  "_id": "node-red-contrib-post-object-detection@0.1.6",
+  "_inBundle": false,
+  "_integrity": "sha512-Fa8gCBbwQEEiZ193zxyC4y5yE/posfzh4EGnaQyzHu7UFjRIXi64G+1j5j07ZM4qFb852IIr+AznrBndVwye5A==",
+  "_location": "/node-red-contrib-post-object-detection",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "node-red-contrib-post-object-detection@0.1.6",
+    "name": "node-red-contrib-post-object-detection",
+    "escapedName": "node-red-contrib-post-object-detection",
+    "rawSpec": "0.1.6",
+    "saveSpec": null,
+    "fetchSpec": "0.1.6"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/node-red-contrib-post-object-detection/-/node-red-contrib-post-object-detection-0.1.6.tgz",
+  "_shasum": "e53c7e4480c5a40920eea192d1299ff64623803d",
+  "_spec": "node-red-contrib-post-object-detection@0.1.6",
+  "_where": "C:\\Users\\F.R.I.D.A.Y\\.node-red",
+  "author": {
+    "name": "yh.wang@ibm.com"
+  },
+  "bugs": {
+    "url": "https://github.com/yhwang/node-red-contrib-post-object-detection/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "canvas": "^2.6.1"
+  },
+  "deprecated": false,
+  "description": "A Node-RED custom node that processes the Object Detection results",
+  "devDependencies": {
+    "@types/node": "^12.12.17",
+    "shelljs": "^0.8.3",
+    "tslint": "^5.20.1",
+    "typescript": "3.5.3"
+  },
+  "homepage": "https://github.com/yhwang/node-red-contrib-post-object-detection#readme",
+  "keywords": [
+    "Object-Detection",
+    "Bounding-Box",
+    "Node-RED",
+    "node-red"
+  ],
+  "license": "Apache-2.0",
+  "main": "dist/post-object-detection/index.js",
+  "name": "node-red-contrib-post-object-detection",
+  "node-red": {
+    "nodes": {
+      "post-object-detection": "dist/post-object-detection/index.js",
+      "bbox-image": "dist/bbox-image/index.js"
+    }
+  },
+  "peerDependencies": {
+    "@tensorflow/tfjs-node": "^1.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yhwang/node-red-contrib-post-object-detection.git"
+  },
+  "scripts": {
+    "build": "tsc && npm run copy",
+    "copy": "node scripts/copy.js",
+    "lint": "tslint -p tsconfig.json -c tslint.json src/**/*.ts"
+  },
+  "version": "0.1.6"
+}

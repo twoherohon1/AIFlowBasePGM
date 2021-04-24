@@ -1,0 +1,22 @@
+{
+    "ModelAssetExchangeServer": {
+        "label": {
+            "service": "サービス",
+            "method": "メソッド",
+            "host": "ホスト",
+            "header": "ヘッダ",
+            "value": "値",
+            "isQuery": "クエリ"
+        },
+        "status": {
+            "requesting": "要求中"
+        },
+        "parameters": {
+            "get_metadata": "metadata",
+            "predict": "predict",
+            "audio": "audio",
+            "passthrough": "Pass Through Input",
+            "optionalParameters": "任意項目"
+        }
+    }
+}

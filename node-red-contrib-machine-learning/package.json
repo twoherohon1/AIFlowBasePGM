@@ -1,0 +1,84 @@
+{
+  "_from": "node-red-contrib-machine-learning",
+  "_id": "node-red-contrib-machine-learning@1.0.8",
+  "_inBundle": false,
+  "_integrity": "sha512-gebmF7NyDhOig8bq1ZaxvooXO7HS7VMrl92GW0zz9shqlAxNbySWo2DKtIKWF6bfLmi1cbdR3A/cN3RGzYhdFA==",
+  "_location": "/node-red-contrib-machine-learning",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "node-red-contrib-machine-learning",
+    "name": "node-red-contrib-machine-learning",
+    "escapedName": "node-red-contrib-machine-learning",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/node-red-contrib-machine-learning/-/node-red-contrib-machine-learning-1.0.8.tgz",
+  "_shasum": "d8c6e91604e48b7ca5fc0657a99568d96608f2de",
+  "_spec": "node-red-contrib-machine-learning",
+  "_where": "C:\\Users\\F.R.I.D.A.Y\\.node-red\\node_modules",
+  "author": {
+    "name": "Gabriele Maurina"
+  },
+  "bugs": {
+    "url": "https://github.com/GabrieleMaurina/node-red-contrib-machine-learning/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "path": "^0.12.7"
+  },
+  "deprecated": false,
+  "description": "Machine learning package for node-red.",
+  "homepage": "https://github.com/GabrieleMaurina/node-red-contrib-machine-learning#readme",
+  "keywords": [
+    "node-red",
+    "machine learning",
+    "ml",
+    "tensorflow",
+    "scikit learn",
+    "scikit",
+    "sklearn",
+    "classification",
+    "regression",
+    "clustering",
+    "outlier",
+    "novelty",
+    "anomaly",
+    "detection"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "node-red-contrib-machine-learning",
+  "node-red": {
+    "nodes": {
+      "create dataset": "nodes/dataset/create-dataset/create-dataset.js",
+      "load dataset": "nodes/dataset/load-dataset/load-dataset.js",
+      "predictor": "nodes/predictor/predictor.js",
+      "assessment": "nodes/assessment/assessment.js",
+      "decision tree classifier": "nodes/trainers/decision-tree-classifier/decision-tree-classifier.js",
+      "deep neural network classifier tensorflow": "nodes/trainers/deep-neural-network-classifier-tensorflow/deep-neural-network-classifier-tensorflow.js",
+      "k neighbors classifier": "nodes/trainers/k-neighbors-classifier/k-neighbors-classifier.js",
+      "multi layer perceptron classifier": "nodes/trainers/multi-layer-perceptron-classifier/multi-layer-perceptron-classifier.js",
+      "random forest classifier": "nodes/trainers/random-forest-classifier/random-forest-classifier.js",
+      "support vector classifier": "nodes/trainers/support-vector-classifier/support-vector-classifier.js",
+      "elliptic envelope classifier": "nodes/trainers/elliptic-envelope-classifier/elliptic-envelope-classifier.js",
+      "isolation forest classifier": "nodes/trainers/isolation-forest-classifier/isolation-forest-classifier.js",
+      "one class support vector classifier": "nodes/trainers/one-class-support-vector-classifier/one-class-support-vector-classifier.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrieleMaurina/node-red-contrib-machine-learning.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.8"
+}

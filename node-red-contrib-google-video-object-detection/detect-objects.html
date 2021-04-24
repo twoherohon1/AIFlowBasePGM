@@ -1,0 +1,53 @@
+<script type="text/x-red" data-template-name="google-video-object-detection">
+  <div class="form-row">
+      <label for="node-input-keyFilename"><i class="fa fa-user"></i> Key File</label>
+      <input type="text" id="node-input-keyFilename">
+  </div>
+  <div class="form-row">
+      <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+      <input type="text" id="node-input-name">
+  </div>       
+</script>
+
+<script type="text/x-red" data-help-name="google-video-object-detection">
+  <p>Detect objects in a video clip using Google Cloud Video Intelligence.</p>
+  <h3>Inputs</h3>
+  <dl class="message-properties">
+    <dt>msg.filename <span class="property-type">string</span></dt>
+    <dd>Path to your video file (on your local filesystem)</dd>
+    <dt>msg.payload <span class="property-type">Base64 String</span></dt>
+    <dd>The video data</dd>
+  </dl>
+  <h3>Outputs</h3>
+  <dl class="message-properties">
+    <dt>msg.payload <span class="property-type">Array</span></dt>
+    <dd>List of objects detected in your image</dd>
+  </dl>
+  <h3>Details</h3>
+  <p>This node will take a video input and run it through Google Video Intelligence API to find objects within the clip. The only function this node performs is object detection. This node outputs an array of objects found within the clip.</p>
+  <p>The runtime input to the node is a Node-RED message from which we care about:
+    <ul>
+      <li>msg.filename - The local path to a file on your filesystem. If you have the base64 data for a video, specify msg.payload as the data and do not set msg.filename.</li>
+      <li>msg.payload - A base64 representation of data containing the video clip you wish to process. This is ignored if msg.filename is present.</li>
+    </ul>
+  </p>
+  <p>Note: if msg.filename is present, that will be used in precedence to the msg.payload.</p>
+</script>
+
+<script type="text/javascript">
+RED.nodes.registerType("google-video-object-detection", {
+  category: "Object Detection",
+  defaults: {
+    keyFilename: {value: "", required: true },
+    name: { value: "", required: false }        
+  },
+  inputs: 1,
+  outputs: 1,
+  icon: "font-awesome/fa-eye",
+  align: "left",
+  color: "#3FADB5",
+  label: function () {
+      return this.name || "video-detect";
+  }
+});
+</script>

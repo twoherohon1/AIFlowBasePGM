@@ -1,0 +1,61 @@
+{
+  "_from": "node-red-contrib-google-video-object-detection@0.0.2",
+  "_id": "node-red-contrib-google-video-object-detection@0.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-NiXQjCMv9mzNdTyyAkmAq5fChla0hXTdDKPwQHG5Iy+XrbKK89fw+bIm4Abc3aPn3nG8yT+cXZhj3urCw7mq2A==",
+  "_location": "/node-red-contrib-google-video-object-detection",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "node-red-contrib-google-video-object-detection@0.0.2",
+    "name": "node-red-contrib-google-video-object-detection",
+    "escapedName": "node-red-contrib-google-video-object-detection",
+    "rawSpec": "0.0.2",
+    "saveSpec": null,
+    "fetchSpec": "0.0.2"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/node-red-contrib-google-video-object-detection/-/node-red-contrib-google-video-object-detection-0.0.2.tgz",
+  "_shasum": "b9d6d62b7fa2f8acd88a32367a6f05f68555faa4",
+  "_spec": "node-red-contrib-google-video-object-detection@0.0.2",
+  "_where": "C:\\Users\\F.R.I.D.A.Y\\.node-red",
+  "author": {
+    "name": "tclayson"
+  },
+  "bugs": {
+    "url": "https://github.com/tclayson/node-red-contrib-google-video-object-detection/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@google-cloud/video-intelligence": "^2.6.4"
+  },
+  "deprecated": false,
+  "description": "Node Red node for detecting objects in video clips using Google Video Intelligence API",
+  "homepage": "https://github.com/tclayson/node-red-contrib-google-video-object-detection#readme",
+  "keywords": [
+    "node-red",
+    "google",
+    "video",
+    "intelligence",
+    "object",
+    "detection"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "node-red-contrib-google-video-object-detection",
+  "node-red": {
+    "nodes": {
+      "detect-objects": "detect-objects.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tclayson/node-red-contrib-google-video-object-detection.git"
+  },
+  "scripts": {},
+  "version": "0.0.2"
+}

@@ -1,0 +1,81 @@
+{
+  "_from": "node-red-contrib-browser-utils",
+  "_id": "node-red-contrib-browser-utils@0.0.9",
+  "_inBundle": false,
+  "_integrity": "sha512-IEB4rL4DgQSbG86HP749IPZocewIEPwoDjRONFfeplnllJ0ve9KjtdQOrXDcOfz6C2XFl6A3Yqdjt589H93ezw==",
+  "_location": "/node-red-contrib-browser-utils",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "node-red-contrib-browser-utils",
+    "name": "node-red-contrib-browser-utils",
+    "escapedName": "node-red-contrib-browser-utils",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/node-red-contrib-browser-utils/-/node-red-contrib-browser-utils-0.0.9.tgz",
+  "_shasum": "25595e35bf1aeefe59ef640ed45ad4949a9f2fb1",
+  "_spec": "node-red-contrib-browser-utils",
+  "_where": "C:\\Users\\F.R.I.D.A.Y",
+  "bugs": {
+    "url": "https://github.com/ibm-early-programs/node-red-contrib-browser-utils/issues"
+  },
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Chris Parsons",
+      "email": "christopherkparsons@gmail.com"
+    },
+    {
+      "name": "Yacine Rezgui",
+      "email": "rezgui.y@gmail.com"
+    },
+    {
+      "name": "Gibson Fahnestock",
+      "email": "gibfahn@gmail.com"
+    },
+    {
+      "name": "Anna Thomas",
+      "email": "annat21@live.co.uk"
+    },
+    {
+      "name": "Soheel Chughtai",
+      "email": "soheel_chughtai@uk.ibm.com"
+    }
+  ],
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "node-red-contrib-play-audio": "^2.3.2"
+  },
+  "deprecated": false,
+  "description": "A collection of Node-RED nodes for browser interaction",
+  "homepage": "https://github.com/ibm-early-programs/node-red-contrib-browser-utils#readme",
+  "keywords": [
+    "node-red",
+    "microphone",
+    "camera",
+    "upload",
+    "bluemix",
+    "watson"
+  ],
+  "license": "Apache-2.0",
+  "name": "node-red-contrib-browser-utils",
+  "node-red": {
+    "nodes": {
+      "fileinject": "./fileinject/fileinject.js",
+      "microphone": "./microphone/microphone.js",
+      "camera": "./camera/camera.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibm-early-programs/node-red-contrib-browser-utils.git"
+  },
+  "version": "0.0.9"
+}
